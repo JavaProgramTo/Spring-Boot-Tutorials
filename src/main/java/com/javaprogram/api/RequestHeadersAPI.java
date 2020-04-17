@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("request/headers")
+@RequestMapping("headers")
 public class RequestHeadersAPI {
 	Logger logger = LoggerFactory.getLogger(RequestHeadersAPI.class);
 
