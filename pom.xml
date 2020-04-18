@@ -24,19 +24,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 			<!-- Exclude tomcat -->
-			<!-- <exclusions>
-				<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-tomcat</artifactId>
-				</exclusion>
-			</exclusions> -->
+			<!-- <exclusions> <exclusion> <groupId>org.springframework.boot</groupId> 
+				<artifactId>spring-boot-starter-tomcat</artifactId> </exclusion> </exclusions> -->
 		</dependency>
-		
-		<!--  Unblock to enable jetty server -->
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jetty</artifactId>
-		</dependency> -->
+
+		<!-- Unblock to enable jetty server -->
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-jetty</artifactId> 
+			</dependency> -->
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -54,6 +48,15 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -65,4 +68,18 @@
 		</plugins>
 	</build>
 
+	<!-- <profiles>
+		<profile>
+			<id>profile1</id>
+			<properties>
+				<spring.boot.mainclass>com.javaprogram.springbootapp.SpringBootAppApplication</spring.boot.mainclass>
+			</properties>
+		</profile>
+		<profile>
+			<id>profile2</id>
+			<properties>
+				<spring.boot.mainclass>com.javaprogram.custom.errors.CustomErrorApplication</spring.boot.mainclass>
+			</properties>
+		</profile>
+	</profiles> -->
 </project>
